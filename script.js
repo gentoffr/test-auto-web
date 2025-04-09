@@ -1,5 +1,5 @@
 function buscar(str){
-    fetch("C:\Users\frang\Desktop\Proy mini\src.json")
+    fetch("C:\Users\frang\Desktop\test-auto-web\src.json")
     .then(res => res.json())
     .then(data => {
         let auto = data.find(a => a.nombre === str)
@@ -13,7 +13,7 @@ function buscar(str){
             let imagenes = [...auto.imagenes];
             contenedor.appendChild(nombre)
         }
-        
+
     })
 }
 let contenedor = document.getElementById("contenedor");
