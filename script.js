@@ -13,6 +13,7 @@ function buscar(str){
             let imagenes = [...auto.imagenes];
             contenedor.appendChild(nombre)
         }
+        
     })
 }
 let contenedor = document.getElementById("contenedor");
