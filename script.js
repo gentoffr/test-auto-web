@@ -5,6 +5,7 @@ function buscar(str){
         let auto = data.find(a => a.nombre === str)
         if(auto)
         {
+            console.log(data);
             let nombre = document.createElement("span");
             nombre.textContent = auto.nombre;
             let ancho = auto.ancho;
@@ -18,3 +19,4 @@ function buscar(str){
 let contenedor = document.getElementById("contenedor");
 contenedor.innerHTML = "";
 let leerTexto = document.getElementById("auto").value.toLowerCase();
+
