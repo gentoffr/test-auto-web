@@ -1,3 +1,7 @@
+let contenedor = document.getElementById("contenedor");
+contenedor.innerHTML = "";
+let leerTexto = document.getElementById("auto").value.toLowerCase();
+
 function buscar(){
     fetch("src.json")
     .then(res => res.json())
@@ -16,7 +20,4 @@ function buscar(){
         }
     })
 }
-let contenedor = document.getElementById("contenedor");
-contenedor.innerHTML = "";
-let leerTexto = document.getElementById("auto").value.toLowerCase();
 
