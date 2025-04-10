@@ -1,5 +1,5 @@
 function buscar(str){
-    fetch("C:\Users\frang\Desktop\test-auto-web\src.json")
+    fetch("C:\\Users\\frang\\Desktop\\test-auto-web\\src.json")
     .then(res => res.json())
     .then(data => {
         let auto = data.find(a => a.nombre === str)
