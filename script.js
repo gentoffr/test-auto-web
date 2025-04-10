@@ -1,8 +1,9 @@
 let contenedor = document.getElementById("contenedor");
 contenedor.innerHTML = "";
-let leerTexto = document.getElementById("auto").value.toLowerCase();
+
 
 function buscar(){
+    let leerTexto = document.getElementById("auto").value.toLowerCase();
     fetch("src.json")
     .then(res => res.json())
     .then(data => {
