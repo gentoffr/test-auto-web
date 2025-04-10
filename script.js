@@ -1,8 +1,8 @@
-function buscar(str){
+function buscar(){
     fetch("src.json")
     .then(res => res.json())
     .then(data => {
-        let auto = data.find(a => a.nombre === str)
+        let auto = data.find(a => a.nombre === leerTexto)
         if(auto)
         {
             console.log(data);
