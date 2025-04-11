@@ -7,7 +7,7 @@ function buscar(){
     fetch("src.json")
     .then(res => res.json())
     .then(data => {
-        let auto = data.find(a => a.nombre === leerTexto)
+        let auto = data.find(a => a.nombre === leerTexto.toLowerCase())
         if(auto)
         {
             console.log(data);
